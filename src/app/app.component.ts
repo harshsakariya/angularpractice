@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  name = 'harsh';
-  disabled = true;
-  enableTextarea(){
-    this.disabled = false;
-  }
+  show = 'pink';
 }
