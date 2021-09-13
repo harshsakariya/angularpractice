@@ -1,17 +1,15 @@
-<h1>Conditions in Angular</h1>
-<!-- <ng-template *ngIf="show=='yes'; then ifBlock else elseBlock"></ng-template>
-<ng-template #ifBlock>
-  <h1>if block</h1>
-</ng-template>
-<ng-template #elseBlock>
-  <h1>else block</h1>
-</ng-template> -->
-<ng-template [ngIf]="show=='red'">
-  <h1>Red Block</h1>
-</ng-template>
-<ng-template [ngIf]="show=='green'">
-  <h1>Green Block</h1>
-</ng-template>
-<ng-template [ngIf]="show=='pink'">
-  <h1>Pink Block</h1>
-</ng-template>
+<h1>Swith Case in Angular</h1>
+<div [ngSwitch]="color">
+  <h2 style="color: red;" *ngSwitchCase="'red'">
+    red color
+  </h2>
+  <h2 style="color: green;" *ngSwitchCase="'green'">
+    green color
+  </h2>
+  <h2 style="color: blue;" *ngSwitchCase="'blue'">
+    blue color
+  </h2>
+  <h2 style="color: yellow;" *ngSwitchCase="'yellow'">
+    yellow color
+  </h2>
+</div>
