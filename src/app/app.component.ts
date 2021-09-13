@@ -7,25 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  // data = ['peter', 'harry', 'john', 'anu'];
-  data = [
-    {
-      name: 'harsh',
-      age: 20,
-      email: "xyz@gmail.com"
-    },
-    {
-      name: 'raj',
-      age: 14,
-      email: "xyz1@gmail.com"
-    },
-    {
-      name: 'nandu',
-      age: 15
-    },
-    {
-      name: 'peter',
-      age: 29
-    }
-  ];
+  getUserValue(values: any){
+    console.log(values);
+  }
 }
