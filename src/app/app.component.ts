@@ -7,8 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
-  currentVal = "";
-  getVal(val: any){
-    this.currentVal = val;
+  name = 'harsh';
+  disabled = true;
+  enableTextarea(){
+    this.disabled = false;
   }
 }
